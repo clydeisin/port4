@@ -1,0 +1,2363 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <title>Xiomi &#8211; Portfolio WordPress Theme</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="alternate" type="application/rss+xml" title="Xiomi &raquo; Feed" href="https://ex-coders.com/wp/xiomi/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Xiomi &raquo; Comments Feed" href="https://ex-coders.com/wp/xiomi/comments/feed/" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/ex-coders.com\/wp\/xiomi\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(s, n) {
+            var o, i, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === a[t]
+                })
+            }
+
+            function u(e, t) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)
+                    if (0 !== n.data[a]) return !1;
+                return !0
+            }
+
+            function f(e, t, n, a) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !a(e, "\ud83e\udedf")
+                }
+                return !1
+            }
+
+            function g(e, t, n, a) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"),
+                    o = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    i = (o.textBaseline = "top", o.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    i[e] = t(o, e, n, a)
+                }), i
+            }
+
+            function t(e) {
+                var t = s.createElement("script");
+                t.src = e, t.defer = !0, s.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                s.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));",
+                            a = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            r = new Worker(URL.createObjectURL(a), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(r.onmessage = function(e) {
+                            c(n = e.data), r.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = g(i, f, p, u))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+        /*! This file is auto-generated */
+
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='all-min-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/css/all.min.css?ver=6.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='meanmenu-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/css/meanmenu.css?ver=2.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='nice-select-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/css/nice-select.css?ver=2.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-bundle-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/css/swiper-bundle.min.css?ver=2.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='xiomi-core-main-style-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/css/main-style.css?ver=2.0.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='drdt-header-footer-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/theme-builder/assets/css/public-mode.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='xiomi-google-fonts-css' href='//fonts.googleapis.com/css?family=Chakra+Petch%3A500%7CChakra+Petch%3A600%7CChakra+Petch%3A700' type='text/css' media='all' />
+    <link rel='stylesheet' id='animate-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/animate.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/bootstrap.min.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='icomoon-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/icomoon.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='magnific-popup-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/magnific-popup.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='master-css-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/master.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='xiomi-main-style-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/main-style.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='xiomi-responsive-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/css/responsive.css?ver=1756723594' type='text/css' media='all' />
+    <link rel='stylesheet' id='xiomi-style-css' href='https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/style.css?ver=6.8.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-7-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/css/post-7.css?ver=1752605689' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-image-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-counter-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-icon-box-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-heading-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-rating-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-rating.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-8-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/css/post-8.css?ver=1752605690' type='text/css' media='all' />
+    <style id='xiomi-dynamic-style-inline-css' type='text/css'>
+        html,
+        body {
+            font-family: Inter, sans-serif;
+            ;
+        }
+
+        p,
+        body {
+            font-size: 16px;
+            ;
+        }
+
+        :root {
+            --body-font: Inter, sans-serif;
+            ;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Manrope, sans-serif;
+            ;
+        }
+
+        :root {
+            --heading-font: Manrope, sans-serif;
+            ;
+        }
+
+        .preloader-inner {
+            background-color: #ffffff;
+            ;
+        }
+
+        .breadcrumb-wrap {
+            background-image: url(https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/bg.jpg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            ;
+        }
+
+        .breadcrumb-wrap:before {
+            background-color: rgba(232, 0, 0, 0.6);
+            ;
+            ;
+        }
+
+        .footer-style .footer-wrap .footer-top {
+            ;
+        }
+
+        .footer-style-01 .footer-wrap.bg-image {
+            background-image: url();
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            ;
+        }
+
+        .footer-style-01 .footer-wrap {
+            ;
+        }
+
+        .footer-style-01 .footer-wrap .footer-top {
+            ;
+        }
+
+        .footer-style-02 .footer-wrap {
+            background-image: url();
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            ;
+        }
+
+        .footer-style-02 .footer-wrap {
+            ;
+        }
+
+        .footer-style-02 .footer-wrap .footer-widget-content {
+            ;
+        }
+
+        .footer-wrap .copyright-wrap .copyright-text {
+            ;
+        }
+
+        .footer-style-01 .footer-wrap .copyright-wrap {
+            ;
+        }
+
+        .footer-style-02 .footer-wrap .copyright-wrap {
+            ;
+        }
+
+        .error_page_content_area {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            ;
+        }
+
+        .blog-page-content-area {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            ;
+        }
+
+        .blog-content-page {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            ;
+        }
+
+        .archive-page-content-area {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            ;
+        }
+
+        .search-page-content-area {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            ;
+        }
+
+        .service-details-page {
+            ;
+        }
+    </style>
+    <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1746139216' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1746139263' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-manrope-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/google-fonts/css/manrope.css?ver=1746139334' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-inter-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/google-fonts/css/inter.css?ver=1746139445' type='text/css' media='all' />
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <link rel="https://api.w.org/" href="https://ex-coders.com/wp/xiomi/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://ex-coders.com/wp/xiomi/wp-json/wp/v2/pages/8" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ex-coders.com/wp/xiomi/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.8.2" />
+    <link rel="canonical" href="https://ex-coders.com/wp/xiomi/" />
+    <link rel='shortlink' href='https://ex-coders.com/wp/xiomi/' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://ex-coders.com/wp/xiomi/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fex-coders.com%2Fwp%2Fxiomi%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://ex-coders.com/wp/xiomi/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fex-coders.com%2Fwp%2Fxiomi%2F&#038;format=xml" />
+    <meta name="generator" content="Elementor 3.29.2; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style>
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+            background-image: none !important;
+        }
+
+        @media screen and (max-height: 1024px) {
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+
+        @media screen and (max-height: 640px) {
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/cropped-favicon-270x270.png" />
+</head>
+
+<body class="home wp-singular page-template-default page page-id-8 wp-embed-responsive wp-theme-xiomi hugebinary-header hugebinary-footer hugebinary-template-xiomi hugebinary-stylesheet-xiomi elementor-default elementor-kit-7 elementor-page elementor-page-8">
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+        <div data-elementor-type="wp-post" data-elementor-id="132" class="elementor elementor-132">
+            <div class="elementor-element elementor-element-0bc8595 e-con-full e-flex e-con e-parent" data-id="0bc8595" data-element_type="container">
+                <div class="elementor-element elementor-element-b6e59b0 elementor-widget elementor-widget-xiomi-navbar-widget" data-id="b6e59b0" data-element_type="widget" data-widget_type="xiomi-navbar-widget.default">
+                    <div class="elementor-widget-container">
+
+                        <div id="preloader" class="preloader">
+                            <div class="animation-preloader">
+                                <div class="spinner">
+                                </div>
+                                <div class="txt-loading">
+                                    <span data-text-preloader="XIOMI" class="letters-loading">
+                                XIOMI                            </span>
+                                </div>
+                                <p class="text-center">Loading</p>
+                            </div>
+                            <div class="loader">
+                                <div class="row">
+                                    <div class="col-3 loader-section section-left">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="col-3 loader-section section-left">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="col-3 loader-section section-right">
+                                        <div class="bg"></div>
+                                    </div>
+                                    <div class="col-3 loader-section section-right">
+                                        <div class="bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Back To Top Start -->
+                        <button id="back-top" class="back-to-top">
+                <i class="fa fa-angle-up"></i>
+            </button>
+
+                        <!--<< Mouse Cursor Start >>-->
+                        <div class="mouse-cursor cursor-outer"></div>
+                        <div class="mouse-cursor cursor-inner"></div>
+
+                        <!-- Header Section Start -->
+                        <header class="header-1" id="header-sticky">
+                            <div class="container-fluid">
+                                <div class="mega-menu-wrapper">
+                                    <div class="header-main">
+                                        <div class="logo">
+                                            <a class="header-logo" href="https://ex-coders.com/wp/xiomi">
+                                    <img src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/Logo-black.svg" alt="img"/>
+                                </a>
+                                        </div>
+                                        <div class="mean__menu-wrapper">
+                                            <div class="main-menu">
+                                                <nav id="mobile-menu">
+                                                    <div id="xiomi_main_menu" class="nav-menu--main">
+                                                        <ul id="menu-main-menu" class="nav-menu--main">
+                                                            <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-37"><a href="#">Home</a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-31"><a href="https://ex-coders.com/wp/xiomi/" aria-current="page">Home 01</a></li>
+                                                                    <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://ex-coders.com/wp/xiomi/home-02/">Home 02</a></li>
+                                                                    <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://ex-coders.com/wp/xiomi/home-03/">Home 03</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://ex-coders.com/wp/xiomi/about-us/">About Us</a></li>
+                                                            <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38"><a href="#">Pages</a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="https://ex-coders.com/wp/xiomi/service/">Service</a></li>
+                                                                    <li id="menu-item-1929" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-1929"><a href="https://ex-coders.com/wp/xiomi/all-service/full-stack-web/">Service Details</a></li>
+                                                                    <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="https://ex-coders.com/wp/xiomi/project/">Project</a></li>
+                                                                    <li id="menu-item-1930" class="menu-item menu-item-type-post_type menu-item-object-project menu-item-1930"><a href="https://ex-coders.com/wp/xiomi/all-project/web-site-development-projects/">Project Details</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39"><a href="#">Blog</a>
+                                                                <ul class="sub-menu">
+                                                                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://ex-coders.com/wp/xiomi/blog/">Blog</a></li>
+                                                                    <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://ex-coders.com/wp/xiomi/blog-grid/">Blog Grid</a></li>
+                                                                    <li id="menu-item-1928" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1928"><a href="https://ex-coders.com/wp/xiomi/the-importance-of-user-in-ui-ux-design/">Blog Details</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://ex-coders.com/wp/xiomi/contact-me/">Contact Me</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div class="header-right d-flex justify-content-end align-items-center">
+                                            <a href="https://ex-coders.com/wp/xiomi/contact-me/" class="theme-btn"> 
+                                    Hire Me                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                                            <div class="header__hamburger d-xl-none my-auto">
+                                                <div class="sidebar__toggle">
+                                                    <i class="fas fa-bars"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+
+
+                        <!-- Offcanvas Area Start -->
+                        <div class="fix-area">
+                            <div class="offcanvas__info">
+                                <div class="offcanvas__wrapper">
+                                    <div class="offcanvas__content">
+                                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                                            <div class="offcanvas__logo">
+                                                <a href="index.html">
+                                        <img src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/Logo-black.svg" alt="logo-img">
+                                    </a>
+                                            </div>
+                                            <div class="offcanvas__close">
+                                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-menu fix mb-3"></div>
+                                        <div class="offcanvas__contact">
+                                            <h4>Contact Info</h4>
+                                            <ul>
+                                                <li class="d-flex">
+                                                    <div class="offcanvas__contact-icon">
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </div>
+                                                    <div class="offcanvas__contact-text">
+                                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <div class="offcanvas__contact-icon">
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </div>
+                                                    <div class="offcanvas__contact-text">
+                                                        <a target="_blank" href="#">info@example.com</a>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <div class="offcanvas__contact-icon">
+                                                        <i class="fa fa-angle-right"></i>
+                                                    </div>
+                                                    <div class="offcanvas__contact-text">
+                                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="header-button mt-4 text-center">
+                                                <a href="#" class="theme-btn">
+                                        Consultation <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                            </div>
+                                            <div class="social-icon d-flex align-items-center">
+                                                <a href=" #">
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>                                        </a>
+                                                <a href=" #">
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>                                        </a>
+                                                <a href=" #">
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                        </a>
+                                                <a href=" #">
+                                            <svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>                                        </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas__overlay"></div>
+
+                        <!-- Search Area Start -->
+                        <div class="search-wrap">
+                            <div class="search-inner">
+                                <i class="fas fa-times search-close" id="search-close"></i>
+                                <div class="search-cell">
+                                    <form action="https://ex-coders.com/wp/xiomi/">
+                                        <div class="search-field-holder">
+                                            <input type="search" name="s" class="main-search-input" placeholder="Search...">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="post-8" class="post-8 page type-page status-publish hentry">
+            <div class="entry-content">
+                <div data-elementor-type="wp-page" data-elementor-id="8" class="elementor elementor-8">
+                    <div class="elementor-element elementor-element-46a6522 e-con-full e-flex e-con e-parent" data-id="46a6522" data-element_type="container">
+                        <div class="elementor-element elementor-element-2de9407 elementor-widget elementor-widget-xiomi-theme-banner-one-widget" data-id="2de9407" data-element_type="widget" data-widget_type="xiomi-theme-banner-one-widget.default">
+                            <div class="elementor-widget-container">
+
+                                <!-- Hero Section Start -->
+                                <div class="hero-section hero-1 bg-cover fix" style="background-image: url(https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/bg-1.jpg);">
+                                    <div class="random-shape float-bob-x">
+                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/random-shape.png" alt="img">
+                                    </div>
+                                    <div class="arrow-shape float-bob-y">
+                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/angle-arrow.png" alt="img">
+                                    </div>
+                                    <div class="star-shape float-bob-y">
+                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star.png" alt="img">
+                                    </div>
+                                    <div class="hero-info">
+                                        <a class="active" href="#">Facebook</a>
+                                        <a class="" href="#">Twitter</a>
+                                        <a class="" href="#">Linkein</a>
+                                        <a class="" href="#">Instagram</a>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row g-4 align-items-center">
+                                            <div class="col-lg-6 order-2 order-lg-1">
+                                                <div class="hero-images">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1.png" alt="img">
+                                                    <div class="hero-shape">
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/bg-shape.png" alt="img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 order-1 order-lg-2">
+                                                <div class="hero-content">
+                                                    <span>
+                                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                                                                Hey There!                                    </span>
+                                                    <h1>I&#039;m Rachel Davis <br> <strong class="type-text"></strong></h1>
+                                                    <p>We&#039;re a team of strategic working globally with largest brands, We believe that progress only you to play things safe.</p>
+                                                    <div class="hero-btn-wrapper">
+                                                        <a href="https://ex-coders.com/wp/xiomi/contact-me/" class="theme-btn">Get Started                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                                        <a href="https://www.youtube.com/watch?v=qiFJMON4vwA&ab_channel=EnvatoVideo" class="video-btn video-popup">
+                                            <span class="icon"><i class="fa-solid fa-play"></i></span>
+                                            <span class="text">Show Reel</span>
+                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-5463508 e-con-full e-flex e-con e-parent" data-id="5463508" data-element_type="container">
+                        <div class="elementor-element elementor-element-86f770f elementor-widget elementor-widget-xiomi-marquee-widget" data-id="86f770f" data-element_type="widget" data-widget_type="xiomi-marquee-widget.default">
+                            <div class="elementor-widget-container">
+
+                                <div class="marquee-section section-bg-2 fix">
+                                    <div class="marquee-container">
+                                        <div class="marquee-wrapper">
+                                            <div class="marquee-content">
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                                <div class="marquee-text">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2-1.png" alt="img">
+                                                    <h3>The Best Solution</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-41a7e89 e-flex e-con-boxed e-con e-parent" data-id="41a7e89" data-element_type="container">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-4cbce85 e-con-full e-flex e-con e-child" data-id="4cbce85" data-element_type="container">
+                                <div class="elementor-element elementor-element-ffe75b6 elementor-absolute top_image_bounce elementor-widget elementor-widget-image" data-id="ffe75b6" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="73" height="80" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star.png" class="attachment-large size-large wp-image-155" alt="" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-a2b11a4 elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="a2b11a4" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="section-title section-main-title mb-0">
+                                            <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        About Us                </span>
+                                            <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                                Solving Problems With
+                                                <span>Intuitive Design</span> </h2>
+                                            <p class="wow fadeInUp" data-wow-delay=".3s">In today is competitive business, the demand for efficient and cost-effective IT solutions has never been more critical.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-d8f8c43 e-grid e-con-full e-con e-child" data-id="d8f8c43" data-element_type="container">
+                                    <div class="elementor-element elementor-element-33797e8 counter-max-width-90 elementor-widget elementor-widget-counter" data-id="33797e8" data-element_type="widget" data-widget_type="counter.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-counter">
+                                                <div class="elementor-counter-title">Years <br> experience...</div>
+                                                <div class="elementor-counter-number-wrapper">
+                                                    <span class="elementor-counter-number-prefix"></span>
+                                                    <span class="elementor-counter-number" data-duration="2000" data-to-value="10" data-from-value="0">0</span>
+                                                    <span class="elementor-counter-number-suffix">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f109510 counter-max-width-90 elementor-widget elementor-widget-counter" data-id="f109510" data-element_type="widget" data-widget_type="counter.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-counter">
+                                                <div class="elementor-counter-title">Clients <br> Worldwide...</div>
+                                                <div class="elementor-counter-number-wrapper">
+                                                    <span class="elementor-counter-number-prefix"></span>
+                                                    <span class="elementor-counter-number" data-duration="2000" data-to-value="10" data-from-value="0">0</span>
+                                                    <span class="elementor-counter-number-suffix">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-db07b98 e-con-full e-flex e-con e-child" data-id="db07b98" data-element_type="container">
+                                    <div class="elementor-element elementor-element-69ce2cf elementor-widget elementor-widget-xiomi-button-widget" data-id="69ce2cf" data-element_type="widget" data-widget_type="xiomi-button-widget.default">
+                                        <div class="elementor-widget-container">
+
+                                            <div class="btn-wrapper">
+                                                <a href="https://ex-coders.com/wp/xiomi/about-us/" class="theme-btn style-1 wow fadeInUp" data-wow-delay=".6s">
+            About Me             <svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>        </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-15f894c elementor-view-framed elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-shape-circle elementor-widget elementor-widget-icon-box" data-id="15f894c" data-element_type="widget"
+                                        data-widget_type="icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-box-wrapper">
+
+                                                <div class="elementor-icon-box-icon">
+                                                    <span class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M12.8918 17.4418L10.7335 19.6002C10.2785 20.0552 9.55516 20.0552 9.0885 19.6118C8.96016 19.4835 8.83183 19.3668 8.7035 19.2385C7.50183 18.0252 6.41683 16.7535 5.4485 15.4235C4.49183 14.0935 3.72183 12.7635 3.16183 11.4452C2.6135 10.1152 2.3335 8.8435 2.3335 7.63016C2.3335 6.83683 2.4735 6.0785 2.7535 5.3785C3.0335 4.66683 3.47683 4.0135 4.09516 3.43016C4.84183 2.69516 5.6585 2.3335 6.52183 2.3335C6.8485 2.3335 7.17516 2.4035 7.46683 2.5435C7.77016 2.6835 8.0385 2.8935 8.2485 3.19683L10.9552 7.01183C11.1652 7.3035 11.3168 7.57183 11.4218 7.8285C11.5268 8.0735 11.5852 8.3185 11.5852 8.54016C11.5852 8.82016 11.5035 9.10016 11.3402 9.3685C11.1885 9.63683 10.9668 9.91683 10.6868 10.1968L9.80016 11.1185C9.67183 11.2468 9.6135 11.3985 9.6135 11.5852C9.6135 11.6785 9.62516 11.7602 9.6485 11.8535C9.6835 11.9468 9.7185 12.0168 9.74183 12.0868C9.95183 12.4718 10.3135 12.9735 10.8268 13.5802C11.3518 14.1868 11.9118 14.8052 12.5185 15.4235C12.6352 15.5402 12.7635 15.6568 12.8802 15.7735C13.3468 16.2285 13.3585 16.9752 12.8918 17.4418Z" fill="#1C1D20"></path><path d="M25.6319 21.3849C25.6319 21.7115 25.5735 22.0499 25.4569 22.3766C25.4219 22.4699 25.3869 22.5632 25.3402 22.6566C25.1419 23.0766 24.8852 23.4732 24.5469 23.8466C23.9752 24.4766 23.3452 24.9316 22.6335 25.2232C22.6219 25.2232 22.6102 25.2349 22.5985 25.2349C21.9102 25.5149 21.1635 25.6666 20.3585 25.6666C19.1685 25.6666 17.8969 25.3866 16.5552 24.8149C15.2135 24.2432 13.8719 23.4732 12.5419 22.5049C12.0869 22.1666 11.6319 21.8282 11.2002 21.4665L15.0152 17.6515C15.3419 17.8965 15.6335 18.0832 15.8785 18.2115C15.9369 18.2349 16.0069 18.2699 16.0885 18.3049C16.1819 18.3399 16.2752 18.3515 16.3802 18.3515C16.5785 18.3515 16.7302 18.2816 16.8585 18.1532L17.7452 17.2782C18.0369 16.9866 18.3169 16.7649 18.5852 16.6249C18.8535 16.4615 19.1219 16.3799 19.4135 16.3799C19.6352 16.3799 19.8685 16.4265 20.1252 16.5315C20.3819 16.6365 20.6502 16.7882 20.9419 16.9866L24.8035 19.7282C25.1069 19.9382 25.3169 20.1832 25.4452 20.4749C25.5619 20.7665 25.6319 21.0582 25.6319 21.3849Z" fill="#1C1D20"></path></svg>				</span>
+                                                </div>
+
+                                                <div class="elementor-icon-box-content">
+
+                                                    <h3 class="elementor-icon-box-title">
+                                                        <span>
+							Phone						</span>
+                                                    </h3>
+
+                                                    <p class="elementor-icon-box-description">
+                                                        +77 022 444 05 05 </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-2c6e2c4 e-con-full e-flex e-con e-child" data-id="2c6e2c4" data-element_type="container">
+                                <div class="elementor-element elementor-element-bfe1e8c elementor-widget elementor-widget-xiomi-about-img-widget" data-id="bfe1e8c" data-element_type="widget" data-widget_type="xiomi-about-img-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="about-wrapper-1 pt-0">
+                                            <div class="about-images">
+                                                <img decoding="async" class="wow img-custom-anim-right" data-wow-delay=".3s" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/man.png" alt="img">
+                                                <div class="bg-shape wow img-custom-anim-top">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/bg-shape-2.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-96808bf elementor-absolute top_image_bounce elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="96808bf" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                                    data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="329" height="138" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/shape-right.png" class="attachment-large size-large wp-image-258" alt="" srcset="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/shape-right.png 329w, https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/shape-right-300x126.png 300w"
+                                            sizes="(max-width: 329px) 100vw, 329px" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-514e5b1 elementor-absolute left_image_bounce elementor-widget elementor-widget-image" data-id="514e5b1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="297" height="116" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/shape-left.png" class="attachment-large size-large wp-image-257" alt="" /> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d0b1518 e-flex e-con-boxed e-con e-parent" data-id="d0b1518" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-9b13b71 elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="9b13b71" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="section-title section-main-title mb-0">
+                                        <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        Our Service                </span>
+                                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                            The Ease-<span>Service</span> Process </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-e125e65 elementor-absolute top_image_bounce elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="e125e65" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                                data-widget_type="image.default">
+                                <div class="elementor-widget-container">
+                                    <img loading="lazy" decoding="async" width="88" height="72" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/random-shape.png" class="attachment-large size-large wp-image-153" alt="" /> </div>
+                            </div>
+                            <div class="elementor-element elementor-element-d1c6702 elementor-widget elementor-widget-xiomi-service-list-widget" data-id="d1c6702" data-element_type="widget" data-widget_type="xiomi-service-list-widget.default">
+                                <div class="elementor-widget-container">
+
+
+                                    <div class="service-section service-1 fix">
+                                        <div class="service-wrapper">
+
+                                            <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                                                <div class="head">
+                                                    <span>01</span>
+                                                    <h4><a href="https://ex-coders.com/wp/xiomi/all-service/full-stack-web/">Full Stack Web</a></h4>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="mb-0">We’re a team of strategic working globally with largest brands, <br> progress only you to play things safe.</p>
+                                                </div>
+                                                <div class="link-btn">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    <a href="https://ex-coders.com/wp/xiomi/all-service/full-stack-web/">Read More</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                                                <div class="head">
+                                                    <span>02</span>
+                                                    <h4><a href="https://ex-coders.com/wp/xiomi/all-service/api-development/">API Development</a></h4>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="mb-0">We’re a team of strategic working globally with largest brands, <br> progress only you to play things safe.</p>
+                                                </div>
+                                                <div class="link-btn">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    <a href="https://ex-coders.com/wp/xiomi/all-service/api-development/">Read More</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                                                <div class="head">
+                                                    <span>03</span>
+                                                    <h4><a href="https://ex-coders.com/wp/xiomi/all-service/moblie-app-design/">Moblie App Design</a></h4>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="mb-0">We’re a team of strategic working globally with largest brands, <br> progress only you to play things safe.</p>
+                                                </div>
+                                                <div class="link-btn">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    <a href="https://ex-coders.com/wp/xiomi/all-service/moblie-app-design/">Read More</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+                                                <div class="head">
+                                                    <span>04</span>
+                                                    <h4><a href="https://ex-coders.com/wp/xiomi/all-service/web-design/">Web Design</a></h4>
+                                                </div>
+                                                <div class="text">
+                                                    <p class="mb-0">We’re a team of strategic working globally with largest brands, <br> progress only you to play things safe.</p>
+                                                </div>
+                                                <div class="link-btn">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                    <a href="https://ex-coders.com/wp/xiomi/all-service/web-design/">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-dad5492 e-flex e-con-boxed e-con e-parent" data-id="dad5492" data-element_type="container">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-a57de87 e-con-full e-flex e-con e-child" data-id="a57de87" data-element_type="container">
+                                <div class="elementor-element elementor-element-c0bf2ca elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="c0bf2ca" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="section-title section-main-title mb-0">
+                                            <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        Project                </span>
+                                            <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                                My Featured
+                                                <span>Protfoilo</span> </h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-493f806 e-con-full e-flex e-con e-child" data-id="493f806" data-element_type="container">
+                                <div class="elementor-element elementor-element-17d680c elementor-widget elementor-widget-xiomi-button-widget" data-id="17d680c" data-element_type="widget" data-widget_type="xiomi-button-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="btn-wrapper">
+                                            <a href="https://ex-coders.com/wp/xiomi/project/" class="theme-btn style-1 wow fadeInUp" data-wow-delay=".6s">
+            All Projects            <svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>        </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-3ff4471 e-flex e-con-boxed e-con e-parent" data-id="3ff4471" data-element_type="container">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-4c280bc e-con-full e-flex e-con e-child" data-id="4c280bc" data-element_type="container">
+                                <div class="elementor-element elementor-element-7bd9e1e elementor-widget elementor-widget-xiomi-project-box-widget" data-id="7bd9e1e" data-element_type="widget" data-widget_type="xiomi-project-box-widget.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="project-wrapper m-0 p-0">
+                                            <div class="project-items m-0 p-0 wow img-custom-anim-top" data-wow-delay=".3s">
+                                                <div class="image">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1-1.jpg" alt="img">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <span>App / Development</span>
+                                                        <h4><a href="https://ex-coders.com/wp/xiomi/all-project/mobile-app-for-task-management/">Mobile App for Task Management</a></h4>
+                                                    </div>
+                                                    <div class="icon">
+                                                        <a href="https://ex-coders.com/wp/xiomi/all-project/mobile-app-for-task-management/"> <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-d0c41d4 e-con-full e-flex e-con e-child" data-id="d0c41d4" data-element_type="container">
+                                <div class="elementor-element elementor-element-b83ce26 elementor-widget elementor-widget-xiomi-project-box-widget" data-id="b83ce26" data-element_type="widget" data-widget_type="xiomi-project-box-widget.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="project-wrapper m-0 p-0">
+                                            <div class="project-items m-0 p-0 wow img-custom-anim-top" data-wow-delay=".3s">
+                                                <div class="image">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg" alt="img">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <span>App / Development</span>
+                                                        <h4><a href="https://ex-coders.com/wp/xiomi/all-project/product-designer-v-s-product-manage/">Product Designer v/s  Manage</a></h4>
+                                                    </div>
+                                                    <div class="icon">
+                                                        <a href="https://ex-coders.com/wp/xiomi/all-project/product-designer-v-s-product-manage/"> <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-d78de85 e-flex e-con-boxed e-con e-parent" data-id="d78de85" data-element_type="container">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-324d4db e-con-full e-flex e-con e-child" data-id="324d4db" data-element_type="container">
+                                <div class="elementor-element elementor-element-0b2a65d elementor-widget elementor-widget-xiomi-project-box-widget" data-id="0b2a65d" data-element_type="widget" data-widget_type="xiomi-project-box-widget.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="project-wrapper m-0 p-0">
+                                            <div class="project-items m-0 p-0 wow img-custom-anim-top" data-wow-delay=".3s">
+                                                <div class="image">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/3-1.jpg" alt="img">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <span>App / Development</span>
+                                                        <h4><a href="https://ex-coders.com/wp/xiomi/all-project/ux-design-case-study-management/">UX Design case study Management</a></h4>
+                                                    </div>
+                                                    <div class="icon">
+                                                        <a href="https://ex-coders.com/wp/xiomi/all-project/ux-design-case-study-management/"> <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-54b4f8d e-con-full e-flex e-con e-child" data-id="54b4f8d" data-element_type="container">
+                                <div class="elementor-element elementor-element-5672241 elementor-widget elementor-widget-xiomi-project-box-widget" data-id="5672241" data-element_type="widget" data-widget_type="xiomi-project-box-widget.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="project-wrapper m-0 p-0">
+                                            <div class="project-items m-0 p-0 wow img-custom-anim-top" data-wow-delay=".3s">
+                                                <div class="image">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/4.jpg" alt="img">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="text">
+                                                        <span>App / Development</span>
+                                                        <h4><a href="https://ex-coders.com/wp/xiomi/all-project/food-delivery-app-task-management/">Mobile App for Task Management</a></h4>
+                                                    </div>
+                                                    <div class="icon">
+                                                        <a href="https://ex-coders.com/wp/xiomi/all-project/food-delivery-app-task-management/"> <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-4c43570 e-flex e-con-boxed e-con e-parent" data-id="4c43570" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-ae9ede2 elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="ae9ede2" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="section-title section-main-title mb-0">
+                                        <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        My Experience                </span>
+                                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                            My <span>Work </span> Experience </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-8fea9b8 elementor-widget elementor-widget-xiomi-work-process-widget" data-id="8fea9b8" data-element_type="widget" data-widget_type="xiomi-work-process-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="experience-wrapper">
+                                        <div class="experience-items wow fadeInUp" data-wow-delay=".2s">
+                                            <span>2025</span>
+                                            <h4>Senior Designer</h4>
+                                            <h6>Behance</h6>
+                                        </div>
+                                        <div class="experience-items wow fadeInUp" data-wow-delay=".3s">
+                                            <span>2024</span>
+                                            <h4>UX Design case study</h4>
+                                            <h6>Behance</h6>
+                                        </div>
+                                        <div class="experience-items wow fadeInUp" data-wow-delay=".4s">
+                                            <span>2023</span>
+                                            <h4>Product Designer v/s Product Manage</h4>
+                                            <h6>Product Hunt</h6>
+                                        </div>
+                                        <div class="experience-items wow fadeInUp" data-wow-delay=".5s">
+                                            <span>2022</span>
+                                            <h4>Xiomi in Product Design (UI/UX)</h4>
+                                            <h6>Pinterest</h6>
+                                        </div>
+                                    </div>
+                                    <div class="client-wrapper">
+                                        <div class="client-items">
+                                            <div class="client-item">
+                                                <div class="icon">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1.svg" alt="img">
+                                                </div>
+                                                <h4 class="number"><span class="count">98</span>% <span class="text">Figma</span></h4>
+                                            </div>
+                                            <div class="client-item">
+                                                <div class="icon">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2.svg" alt="img">
+                                                </div>
+                                                <h4 class="number"><span class="count">98</span>% <span class="text">Photoshop</span></h4>
+                                            </div>
+                                            <div class="client-item">
+                                                <div class="icon">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/3.svg" alt="img">
+                                                </div>
+                                                <h4 class="number"><span class="count">79</span>% <span class="text">Illustrator</span></h4>
+                                            </div>
+                                            <div class="client-item">
+                                                <div class="icon">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/4.svg" alt="img">
+                                                </div>
+                                                <h4 class="number"><span class="count">98</span>% <span class="text">Sketch</span></h4>
+                                            </div>
+                                            <div class="client-item">
+                                                <div class="icon">
+                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/5.svg" alt="img">
+                                                </div>
+                                                <h4 class="number"><span class="count">93</span>% <span class="text">Adobe_Xd</span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-fe93423 elementor-absolute top_image_bounce elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="fe93423" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                                data-widget_type="image.default">
+                                <div class="elementor-widget-container">
+                                    <img loading="lazy" decoding="async" width="88" height="72" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/random-shape.png" class="attachment-large size-large wp-image-153" alt="" /> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-552d98b e-flex e-con-boxed e-con e-parent" data-id="552d98b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-378e925 e-con-full e-flex e-con e-child" data-id="378e925" data-element_type="container">
+                                <div class="elementor-element elementor-element-ab05a6c elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="ab05a6c" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="section-title section-main-title mb-0">
+                                            <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        Awards                </span>
+                                            <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                                <span>Awards</span> & Recognition </h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-36b9f4b e-con-full e-flex e-con e-child" data-id="36b9f4b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-element elementor-element-bd141b7 elementor-widget elementor-widget-image" data-id="bd141b7" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.svg" title="2" alt="2" loading="lazy" /> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ff81e24 elementor-widget elementor-widget-icon-box" data-id="ff81e24" data-element_type="widget" data-widget_type="icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-box-wrapper">
+
+
+                                                <div class="elementor-icon-box-content">
+
+                                                    <h3 class="elementor-icon-box-title">
+                                                        <span>
+							Best Mobile App Design						</span>
+                                                    </h3>
+
+                                                    <p class="elementor-icon-box-description">
+                                                        March 26, 2024 </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-eecdb8d elementor-absolute elementor-widget elementor-widget-image" data-id="eecdb8d" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/5-1.svg" title="5" alt="5" loading="lazy" /> </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-269421e e-con-full e-flex e-con e-child" data-id="269421e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-element elementor-element-225b2aa elementor-widget elementor-widget-image" data-id="225b2aa" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/4-1.svg" title="4" alt="4" loading="lazy" /> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ecfffdd elementor-widget elementor-widget-icon-box" data-id="ecfffdd" data-element_type="widget" data-widget_type="icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-box-wrapper">
+
+
+                                                <div class="elementor-icon-box-content">
+
+                                                    <h3 class="elementor-icon-box-title">
+                                                        <span>
+							Best Mobile App Design						</span>
+                                                    </h3>
+
+                                                    <p class="elementor-icon-box-description">
+                                                        March 26, 2024 </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f2f6bc7 elementor-absolute elementor-widget elementor-widget-image" data-id="f2f6bc7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/8.svg" title="8" alt="8" loading="lazy" /> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-75fe6e2 e-con-full e-flex e-con e-child" data-id="75fe6e2" data-element_type="container">
+                                <div class="elementor-element elementor-element-a1c7692 e-con-full e-flex e-con e-child" data-id="a1c7692" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-element elementor-element-6011920 elementor-widget elementor-widget-image" data-id="6011920" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1-1.svg" title="1" alt="1" loading="lazy" /> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-24305bc elementor-widget elementor-widget-icon-box" data-id="24305bc" data-element_type="widget" data-widget_type="icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-box-wrapper">
+
+
+                                                <div class="elementor-icon-box-content">
+
+                                                    <h3 class="elementor-icon-box-title">
+                                                        <span>
+							Best Mobile App Design						</span>
+                                                    </h3>
+
+                                                    <p class="elementor-icon-box-description">
+                                                        March 26, 2024 </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-04c95a8 elementor-absolute elementor-widget elementor-widget-image" data-id="04c95a8" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/5-1.svg" title="5" alt="5" loading="lazy" /> </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-611b088 e-con-full e-flex e-con e-child" data-id="611b088" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-element elementor-element-cd4c050 elementor-widget elementor-widget-image" data-id="cd4c050" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/3-1.svg" title="3" alt="3" loading="lazy" /> </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-9fb1ca6 elementor-widget elementor-widget-icon-box" data-id="9fb1ca6" data-element_type="widget" data-widget_type="icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-icon-box-wrapper">
+
+
+                                                <div class="elementor-icon-box-content">
+
+                                                    <h3 class="elementor-icon-box-title">
+                                                        <span>
+							Best Mobile App Design						</span>
+                                                    </h3>
+
+                                                    <p class="elementor-icon-box-description">
+                                                        March 26, 2024 </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-2baedef elementor-absolute elementor-widget elementor-widget-image" data-id="2baedef" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/7.svg" title="7" alt="7" loading="lazy" /> </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-7d85e27 elementor-widget__width-auto left_image_bounce elementor-widget elementor-widget-image" data-id="7d85e27" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img decoding="async" width="73" height="80" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star.png" class="attachment-large size-large wp-image-155" alt="" /> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-7b7447b e-flex e-con-boxed e-con e-parent" data-id="7b7447b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-409ec3a elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="409ec3a" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="section-title section-main-title mb-0">
+                                        <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        Best Pricing                </span>
+                                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                            My <span>Pricing</span> Plan </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-a3b1082 e-grid e-con-full e-con e-child" data-id="a3b1082" data-element_type="container">
+                                <div class="elementor-element elementor-element-85f7dcd elementor-widget elementor-widget-xiomi-pricing-one-widget" data-id="85f7dcd" data-element_type="widget" data-widget_type="xiomi-pricing-one-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="price-wrapper">
+                                            <div class="price-item style-2">
+                                                <div class="content">
+                                                    <h4>Basic Plan</h4>
+                                                    <h3>
+                                                        $500 <span>Monthly</span>
+                                                    </h3>
+                                                    <p>Description of the tier list will go here, copy should be concise and impactful.</p>
+                                                </div>
+                                                <ul class="price-list">
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> UI UX Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design Customization </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design with Figma </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Multipage Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Support 6 months </li>
+                                                </ul>
+                                                <a href="#" class="theme-btn">
+                        Start My Project Now                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-bde7382 elementor-widget elementor-widget-xiomi-pricing-one-widget" data-id="bde7382" data-element_type="widget" data-widget_type="xiomi-pricing-one-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="price-wrapper">
+                                            <div class="price-item style-2">
+                                                <div class="content">
+                                                    <h6 class="box">Most Popular</h6>
+                                                    <h4>Standard Plan</h4>
+                                                    <h3>
+                                                        $2500 <span>Monthly</span>
+                                                    </h3>
+                                                    <p>Description of the tier list will go here, copy should be concise and impactful.</p>
+                                                </div>
+                                                <ul class="price-list">
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> UI UX Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design Customization </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design with Figma </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Multipage Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Support 6 months </li>
+                                                </ul>
+                                                <a href="#" class="theme-btn">
+                        Start My Project Now                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-edc1137 elementor-widget elementor-widget-xiomi-pricing-one-widget" data-id="edc1137" data-element_type="widget" data-widget_type="xiomi-pricing-one-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="price-wrapper">
+                                            <div class="price-item style-2">
+                                                <div class="content">
+                                                    <h4>Premium Plan</h4>
+                                                    <h3>
+                                                        $3500 <span>Monthly</span>
+                                                    </h3>
+                                                    <p>Description of the tier list will go here, copy should be concise and impactful.</p>
+                                                </div>
+                                                <ul class="price-list">
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> UI UX Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design Customization </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Design with Figma </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Multipage Design </li>
+                                                    <li>
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/arrow-circle-right.svg" alt="img"> Support 6 months </li>
+                                                </ul>
+                                                <a href="#" class="theme-btn">
+                        Start My Project Now                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-1cf46a3 overflow-hidden e-flex e-con-boxed e-con e-parent" data-id="1cf46a3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-c8b9bb6 e-con-full e-flex e-con e-child" data-id="c8b9bb6" data-element_type="container">
+                                <div class="elementor-element elementor-element-9b59fb4 elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="9b59fb4" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="section-title section-main-title mb-0">
+                                            <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        Testimonials                </span>
+                                            <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                                Our clients awesome -<span>Testimonials</span> </h2>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-8a716b6 elementor-absolute top_image_bounce elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="8a716b6" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+                                    data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="88" height="72" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/random-shape.png" class="attachment-large size-large wp-image-153" alt="" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-f872996 e-con-full e-flex e-con e-child" data-id="f872996" data-element_type="container">
+                                    <div class="elementor-element elementor-element-8d4cf31 elementor-absolute elementor-widget elementor-widget-heading" data-id="8d4cf31" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h2 class="elementor-heading-title elementor-size-default">4.8</h2>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f9fe38f e-con-full e-flex e-con e-child" data-id="f9fe38f" data-element_type="container">
+                                        <div class="elementor-element elementor-element-bc605c9 elementor-widget elementor-widget-heading" data-id="bc605c9" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <p class="elementor-heading-title elementor-size-default">1200+ Clients Rating.</p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-4c5bfa5 elementor-widget elementor-widget-rating" data-id="4c5bfa5" data-element_type="widget" data-widget_type="rating.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="e-rating" itemtype="https://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                    <meta itemprop="worstRating" content="0">
+                                                    <meta itemprop="bestRating" content="5">
+                                                    <div class="e-rating-wrapper" itemprop="ratingValue" content="5" role="img" aria-label="Rated 5 out of 5">
+                                                        <div class="e-icon">
+                                                            <div class="e-icon-wrapper e-icon-marked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                            <div class="e-icon-wrapper e-icon-unmarked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                        </div>
+                                                        <div class="e-icon">
+                                                            <div class="e-icon-wrapper e-icon-marked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                            <div class="e-icon-wrapper e-icon-unmarked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                        </div>
+                                                        <div class="e-icon">
+                                                            <div class="e-icon-wrapper e-icon-marked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                            <div class="e-icon-wrapper e-icon-unmarked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                        </div>
+                                                        <div class="e-icon">
+                                                            <div class="e-icon-wrapper e-icon-marked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                            <div class="e-icon-wrapper e-icon-unmarked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                        </div>
+                                                        <div class="e-icon">
+                                                            <div class="e-icon-wrapper e-icon-marked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                            <div class="e-icon-wrapper e-icon-unmarked">
+                                                                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-star" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M450 75L338 312 88 350C46 354 25 417 58 450L238 633 196 896C188 942 238 975 275 954L500 837 725 954C767 975 813 942 804 896L763 633 942 450C975 417 954 358 913 350L663 312 550 75C529 33 471 33 450 75Z"></path></svg>                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-ab929ef e-con-full overflow-hidden e-flex e-con e-child" data-id="ab929ef" data-element_type="container">
+                                <div class="elementor-element elementor-element-09afea9 elementor-widget elementor-widget-xiomi-testimonial-slider" data-id="09afea9" data-element_type="widget" data-widget_type="xiomi-testimonial-slider.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="testimonials-wrapper">
+                                            <div class="swiper testimonial-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="testimonial-box-items">
+                                                            <div class="client-info">
+                                                                <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1-1.png" alt="img">
+                                                                <div class="client-content">
+                                                                    <h5>Webcly jhonson</h5>
+                                                                    <p>Senior engineer</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testi-content">
+                                                                <div class="icon">
+                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/42.svg" alt="img">
+                                                                </div>
+                                                                <p>This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations. We highly recommend their outstanding services!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="testimonial-box-items">
+                                                            <div class="client-info">
+                                                                <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-2.jpg" alt="img">
+                                                                <div class="client-content">
+                                                                    <h5>Wilam Carry</h5>
+                                                                    <p>Senior engineer</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testi-content">
+                                                                <div class="icon">
+                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/42.svg" alt="img">
+                                                                </div>
+                                                                <p>This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations. We highly recommend their outstanding services!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="testimonial-box-items">
+                                                            <div class="client-info">
+                                                                <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/3-2.jpg" alt="img">
+                                                                <div class="client-content">
+                                                                    <h5>Jr Robart</h5>
+                                                                    <p>Senior engineer</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testi-content">
+                                                                <div class="icon">
+                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/42.svg" alt="img">
+                                                                </div>
+                                                                <p>This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations. We highly recommend their outstanding services!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="testimonial-box-items">
+                                                            <div class="client-info">
+                                                                <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/4-1.jpg" alt="img">
+                                                                <div class="client-content">
+                                                                    <h5>Webcly jhonson</h5>
+                                                                    <p>Senior engineer</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testi-content">
+                                                                <div class="icon">
+                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/42.svg" alt="img">
+                                                                </div>
+                                                                <p>This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations. We highly recommend their outstanding services!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="testimonial-box-items">
+                                                            <div class="client-info">
+                                                                <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1-1.png" alt="img">
+                                                                <div class="client-content">
+                                                                    <h5>Webcly jhonson</h5>
+                                                                    <p>Senior engineer</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="testi-content">
+                                                                <div class="icon">
+                                                                    <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/42.svg" alt="img">
+                                                                </div>
+                                                                <p>This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations. We highly recommend their outstanding services!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-dot text-center">
+                                                <div class="dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-406cdd9 e-flex e-con-boxed e-con e-parent" data-id="406cdd9" data-element_type="container">
+                        <div class="e-con-inner">
+                            <div class="elementor-element elementor-element-6640c7e elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="6640c7e" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="section-title section-main-title mb-0">
+                                        <span class="wow fadeInUp style-1">
+                                            <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star-2.png" alt="img">
+                                        My Blog                </span>
+                                        <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                            Latest <span>Blog</span> </h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-0d55287 elementor-widget elementor-widget-xiomi-blog-grid-list-one-widget" data-id="0d55287" data-element_type="widget" data-widget_type="xiomi-blog-grid-list-one-widget.default">
+                                <div class="elementor-widget-container">
+                                    <div class="blog-grid-one news-section news-1">
+                                        <div class="row">
+
+
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="news-item wow fadeInUp" data-wow-delay=".3s">
+                                                    <div class="thumb">
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/16.jpg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <ul class="news-meta">
+                                                            <li class="green"><a href="https://ex-coders.com/wp/xiomi/category/ui-ux-design/" rel="category tag">UI/UX Design</a></li>
+                                                            <li class="date"><span></span>1 Sep 25</li>
+                                                        </ul>
+                                                        <h4 class="mb-4"><a href="https://ex-coders.com/wp/xiomi/the-importance-of-user-in-ui-ux-design/">The Importance of User in UI/UX Design</a></h4>
+                                                        <div class="news-btns">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                            <a href="https://ex-coders.com/wp/xiomi/the-importance-of-user-in-ui-ux-design/">Read More </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="news-item wow fadeInUp" data-wow-delay=".4s">
+                                                    <div class="thumb">
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/18.jpg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <ul class="news-meta">
+                                                            <li class="green"><a href="https://ex-coders.com/wp/xiomi/category/visual-design/" rel="category tag">Visual Design</a></li>
+                                                            <li class="date"><span></span>1 Sep 25</li>
+                                                        </ul>
+                                                        <h4 class="mb-4"><a href="https://ex-coders.com/wp/xiomi/the-behind-color-choices-in-ui-ux-design/">The Behind Color Choices in UI/UX Design</a></h4>
+                                                        <div class="news-btns">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                            <a href="https://ex-coders.com/wp/xiomi/the-behind-color-choices-in-ui-ux-design/">Read More </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="news-item wow fadeInUp" data-wow-delay=".5s">
+                                                    <div class="thumb">
+                                                        <img decoding="async" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/19.jpg" alt="img">
+                                                    </div>
+                                                    <div class="content">
+                                                        <ul class="news-meta">
+                                                            <li class="green"><a href="https://ex-coders.com/wp/xiomi/category/web-design/" rel="category tag">Web Design</a></li>
+                                                            <li class="date"><span></span>1 Sep 25</li>
+                                                        </ul>
+                                                        <h4 class="mb-4"><a href="https://ex-coders.com/wp/xiomi/the-role-of-prototyping-in-ui-ux-design/">The Role of Prototyping in UI/UX Design</a></h4>
+                                                        <div class="news-btns">
+                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                            <a href="https://ex-coders.com/wp/xiomi/the-role-of-prototyping-in-ui-ux-design/">Read More </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-5af69ce elementor-widget elementor-widget-xiomi-button-widget" data-id="5af69ce" data-element_type="widget" data-widget_type="xiomi-button-widget.default">
+                                <div class="elementor-widget-container">
+
+                                    <div class="btn-wrapper">
+                                        <a href="https://ex-coders.com/wp/xiomi/blog-grid/" class="theme-btn style-1 wow fadeInUp" data-wow-delay=".6s">
+            View All Blog            <svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .entry-content -->
+        </div>
+        <!-- #post-8 -->
+        <div data-elementor-type="wp-post" data-elementor-id="835" class="elementor elementor-835">
+            <div class="elementor-element elementor-element-4ad9b2d e-flex e-con-boxed e-con e-parent" data-id="4ad9b2d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-f606f2b e-con-full e-flex e-con e-child" data-id="f606f2b" data-element_type="container">
+                        <div class="elementor-element elementor-element-d6f537c e-grid e-con-full e-con e-child" data-id="d6f537c" data-element_type="container">
+                            <div class="elementor-element elementor-element-43786a8 e-con-full e-flex e-con e-child" data-id="43786a8" data-element_type="container">
+                                <div class="elementor-element elementor-element-ad22d18 elementor-absolute top_image_bounce elementor-widget elementor-widget-image" data-id="ad22d18" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img width="88" height="72" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/random-shape.png" class="attachment-large size-large wp-image-153" alt="" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-7172961 elementor-widget elementor-widget-heading" data-id="7172961" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h2 class="elementor-heading-title elementor-size-default">Services</h2>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-87d0afc elementor-widget elementor-widget-heading" data-id="87d0afc" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <p class="elementor-heading-title elementor-size-default">Travel World House, Level 7, 17 Jones St, NSW, 2060</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-6a24847 e-con-full e-flex e-con e-child" data-id="6a24847" data-element_type="container">
+                                <div class="elementor-element elementor-element-7e6a07c elementor-widget elementor-widget-heading" data-id="7e6a07c" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h2 class="elementor-heading-title elementor-size-default">Contact</h2>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-54a85c8 elementor-widget elementor-widget-heading" data-id="54a85c8" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <p class="elementor-heading-title elementor-size-default">info@dixor.com <br> +47 333 78 901</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-b3ccee6 e-con-full e-flex e-con e-child" data-id="b3ccee6" data-element_type="container">
+                            <div class="elementor-element elementor-element-6d67cc7 elementor-widget elementor-widget-heading" data-id="6d67cc7" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h6 class="elementor-heading-title elementor-size-default">Social:</h6>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-ab93c4e e-grid-align-left elementor-shape-circle elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="ab93c4e" data-element_type="widget" data-widget_type="social-icons.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-social-icons-wrapper elementor-grid" role="list">
+                                        <span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2b67c00" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+                                        <svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>                                        </a>
+                                        </span>
+                                        <span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-cda3b4d" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+                                        <svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>                                        </a>
+                                        </span>
+                                        <span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-ef70e62" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+                                        <svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>                                        </a>
+                                        </span>
+                                        <span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-9246d48" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+                                        <svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                        </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-9986324 e-con-full e-flex e-con e-child" data-id="9986324" data-element_type="container">
+                        <div class="elementor-element elementor-element-2d391da e-grid e-con-full e-con e-child" data-id="2d391da" data-element_type="container">
+                            <div class="elementor-element elementor-element-aff89e0 e-con-full e-flex e-con e-child" data-id="aff89e0" data-element_type="container">
+                                <div class="elementor-element elementor-element-e53935d elementor-widget elementor-widget-heading" data-id="e53935d" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h2 class="elementor-heading-title elementor-size-default">Useful Links</h2>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-561cb4b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="561cb4b" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/about-us/">
+
+											<span class="elementor-icon-list-text">About Me</span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/service/">
+
+											<span class="elementor-icon-list-text">Service </span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/project/">
+
+											<span class="elementor-icon-list-text">Portfolio </span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/blog-grid/">
+
+											<span class="elementor-icon-list-text">Blog</span>
+											</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-2356221 e-con-full e-flex e-con e-child" data-id="2356221" data-element_type="container">
+                                <div class="elementor-element elementor-element-a3dff79 elementor-absolute left_image_bounce elementor-widget elementor-widget-image" data-id="a3dff79" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img width="73" height="80" src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/star.png" class="attachment-large size-large wp-image-155" alt="" /> </div>
+                                </div>
+                                <div class="elementor-element elementor-element-b229c70 elementor-widget elementor-widget-heading" data-id="b229c70" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h2 class="elementor-heading-title elementor-size-default">Services​</h2>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-e7e1d52 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e7e1d52" data-element_type="widget" data-widget_type="icon-list.default">
+                                    <div class="elementor-widget-container">
+                                        <ul class="elementor-icon-list-items">
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/all-service/api-development/">
+
+											<span class="elementor-icon-list-text">Moblie App Design </span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/all-service/web-design/">
+
+											<span class="elementor-icon-list-text">Web Design </span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/all-service/ui-ux-design/">
+
+											<span class="elementor-icon-list-text">UI/UX Design </span>
+											</a>
+                                            </li>
+                                            <li class="elementor-icon-list-item">
+                                                <a href="https://ex-coders.com/wp/xiomi/all-service/moblie-app-design/">
+
+											<span class="elementor-icon-list-text">Visual Design</span>
+											</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-be1b410 e-flex e-con-boxed e-con e-parent" data-id="be1b410" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-ac63bec e-grid e-con-full e-con e-child" data-id="ac63bec" data-element_type="container">
+                        <div class="elementor-element elementor-element-fed1781 elementor-widget elementor-widget-xiomi-heading-title-widget" data-id="fed1781" data-element_type="widget" data-widget_type="xiomi-heading-title-widget.default">
+                            <div class="elementor-widget-container">
+
+                                <div class="section-title section-main-title mb-0">
+                                    <h2 class="wow fadeInUp mb-3" data-wow-delay=".2s">
+                                        Copyright©<span>Xiomi</span> </h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-94553ec elementor-widget elementor-widget-image" data-id="94553ec" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img src="https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/logo-white.svg" title="logo-white" alt="logo-white" loading="lazy" /> </div>
+                        </div>
+                        <div class="elementor-element elementor-element-8e26c60 elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8e26c60" data-element_type="widget"
+                            data-widget_type="icon-list.default">
+                            <div class="elementor-widget-container">
+                                <ul class="elementor-icon-list-items elementor-inline-items">
+                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                        <a href="#">
+
+											<span class="elementor-icon-list-text">Terms & Conditions </span>
+											</a>
+                                    </li>
+                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                        <a href="#">
+
+											<span class="elementor-icon-list-text">Privacy Policy</span>
+											</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- #page -->
+
+    <script type="speculationrules">
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/wp\/xiomi\/*"},{"not":{"href_matches":["\/wp\/xiomi\/wp-*.php","\/wp\/xiomi\/wp-admin\/*","\/wp\/xiomi\/wp-content\/uploads\/*","\/wp\/xiomi\/wp-content\/*","\/wp\/xiomi\/wp-content\/plugins\/*","\/wp\/xiomi\/wp-content\/themes\/xiomi\/*","\/wp\/xiomi\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,
+        .no-prefetch a"}}]},"eagerness":"conservative"}]}
+    </script>
+    <script>
+        const lazyloadRunObserver = () => {
+            const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+            const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        let lazyloadBackground = entry.target;
+                        if (lazyloadBackground) {
+                            lazyloadBackground.classList.add('e-lazyloaded');
+                        }
+                        lazyloadBackgroundObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '200px 0px 200px 0px'
+            });
+            lazyloadBackgrounds.forEach((lazyloadBackground) => {
+                lazyloadBackgroundObserver.observe(lazyloadBackground);
+            });
+        };
+        const events = [
+            'DOMContentLoaded',
+            'elementor/lazyload/observe',
+        ];
+        events.forEach((event) => {
+            document.addEventListener(event, lazyloadRunObserver);
+        });
+    </script>
+    <link rel='stylesheet' id='elementor-post-132-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/css/post-132.css?ver=1752605690' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-835-css' href='https://ex-coders.com/wp/xiomi/wp-content/uploads/elementor/css/post-835.css?ver=1752605690' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-social-icons-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='e-apple-webkit-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.29.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='widget-icon-list-css' href='https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.29.2' type='text/css' media='all' />
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1" id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-before">
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/ex-coders.com\/wp\/xiomi\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1" id="contact-form-7-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/countdowncustom.js?ver=1.0.0" id="countdowncustom-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/jquery.counterup.min.js?ver=1.0.0" id="counterup-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/jquery.magnific-popup.min.js?ver=1.0.0" id="popup-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/jquery.meanmenu.min.js?ver=1.0.0" id="meanmenu-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/jquery.nice-select.min.js?ver=1.0.2" id="nice-select-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/typed.min.js?ver=11.1.14" id="typed-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/viewport.jquery.js?ver=1.0.2" id="viewport-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/jquery.waypoints.js?ver=1.0.0" id="waypoints-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/wow.min.js?ver=4.0.1" id="wow-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/xiomi-core/assets/js/main.js?ver=1756723594" id="xiomi-core-main-script-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/bootstrap.min.js?ver=5.0.2" id="bootstrap-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/counter.min.js?ver=5.15.2" id="counter-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/fontawesome.min.js?ver=1.0.0" id="fontawesome-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/jquery.magnific-popup.js?ver=1.1.0" id="magnific-popup-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/preloader.js?ver=1.1.3" id="preloader-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/popper.min.js?ver=1.1.3" id="popper-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/themes/xiomi/assets/js/main.js?ver=1756723594" id="xiomi-main-script-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.29.2" id="elementor-webpack-runtime-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.29.2" id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+        /* <![CDATA[ */
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                },
+                "hasCustomBreakpoints": false
+            },
+            "version": "3.29.2",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_font_icon_svg": true,
+                "additional_custom_breakpoints": true,
+                "container": true,
+                "e_local_google_fonts": true,
+                "nested-elements": true,
+                "editor_v2": true,
+                "e_element_cache": true,
+                "home_screen": true,
+                "launchpad-checklist": true,
+                "cloud-library": true,
+                "e_opt_in_v4_page": true
+            },
+            "urls": {
+                "assets": "https:\/\/ex-coders.com\/wp\/xiomi\/wp-content\/plugins\/elementor\/assets\/",
+                "ajaxurl": "https:\/\/ex-coders.com\/wp\/xiomi\/wp-admin\/admin-ajax.php",
+                "uploadUrl": "https:\/\/ex-coders.com\/wp\/xiomi\/wp-content\/uploads"
+            },
+            "nonces": {
+                "floatingButtonsClickTracking": "f113928077"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 8,
+                "title": "Xiomi%20%E2%80%93%20Portfolio%20WordPress%20Theme",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.29.2" id="elementor-frontend-js"></script>
+    <script type="text/javascript" src="https://ex-coders.com/wp/xiomi/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+
+</body>
+
+</html>
